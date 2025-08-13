@@ -83,16 +83,16 @@ const IndexPage = () => {
       </div>
 
       {/* Promotion */}
-      <div className={styles.promotionContainer}>
+      {/*<div className={styles.promotionContainer}>
         <Hero image={toOptimizedImage('/banner2.png')} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
           <Link to={'/shop'}>WOMAN</Link>
           <Link to={'/shop'}>MAN</Link>
         </div>
-      </div>
+      </div>*/}
 
       {/* Quote */}
-      <Quote
+        {/*<Quote
         bgColor={'var(--standard-light-grey)'}
         title={'about Sydney'}
         quote={
@@ -101,15 +101,15 @@ const IndexPage = () => {
       />
 
       {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
+        {/*<div className={styles.blogsContainer}>
         <Container size={'large'}>
           <Title name={'Journal'} subtitle={'Notes on life and style'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
-      </div>
+      </div>*/}
 
       {/* Promotion */}
-      <div className={styles.sustainableContainer}>
+         {/*<div className={styles.sustainableContainer}>
         <Hero
           image={toOptimizedImage('/banner3.png')}
           title={'We are Sustainable'}
@@ -120,10 +120,10 @@ const IndexPage = () => {
           maxWidth={'660px'}
           ctaStyle={styles.ctaCustomButton}
         />
-      </div>
+      </div>*/}
 
       {/* Social Media */}
-      <div className={styles.socialContainer}>
+         {/*<div className={styles.socialContainer}>
         <Title
           name={'Styled by You'}
           subtitle={'Tag @sydney to be featured.'}
@@ -133,7 +133,7 @@ const IndexPage = () => {
           <img src={toOptimizedImage(`/social/socialMedia2.png`)} alt={'social media 2'} />
           <img src={toOptimizedImage(`/social/socialMedia3.png`)} alt={'social media 3'} />
           <img src={toOptimizedImage(`/social/socialMedia4.png`)} alt={'social media 4'} />
-        </div>
+        </div>*/}
       </div>
       <AttributeGrid />
     </Layout>
