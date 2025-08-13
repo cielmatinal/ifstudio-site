@@ -29,13 +29,14 @@ const IndexPage = () => {
     <Layout disablePaddingBottom>
       {/* Hero Container */}
       <Hero
-        maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
-        ctaAction={goToShop}
-      />
+  maxWidth={'680px'}
+  image={'/banner1.png'}
+  title={'IF Studio — créations & contenus digitaux'}
+  subtitle={'Contenus visuels et audio sur-mesure. Commandes privées. Discrétion garantie.'}
+  ctaText={'me contacter'}
+  ctaAction={() => navigate('/contact')}
+/>
+
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
@@ -49,27 +50,21 @@ const IndexPage = () => {
         </p>
       </div>
 
-      {/* Collection Container */}
-      <div className={styles.collectionContainer}>
-        <Container size={'large'}>
-          <Title name={'New Collection'} />
-          <ProductCollectionGrid />
-        </Container>
-      </div>
+      {/* 
+<Container size={'large'}>
+  <Title name={'New Collection'} />
+  <ProductCollectionGrid />
+</Container>
+*/}
 
-      {/* New Arrivals */}
-      <div className={styles.newArrivalsContainer}>
-        <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
-          <ProductCardGrid
-            spacing={true}
-            showSlider
-            height={480}
-            columns={3}
-            data={newArrivals}
-          />
-        </Container>
-      </div>
+      {/* 
+<div className={styles.newArrivalsContainer}>
+  <Container>
+    <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+    <ProductCardGrid spacing={true} showSlider height={480} columns={3} data={newArrivals} />
+  </Container>
+</div>
+*/}
 
       {/* Highlight  */}
       <div className={styles.highlightContainer}>
