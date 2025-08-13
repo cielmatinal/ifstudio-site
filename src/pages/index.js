@@ -29,26 +29,22 @@ const IndexPage = () => {
     <Layout disablePaddingBottom>
       {/* Hero Container */}
       <Hero
-  maxWidth={'680px'}
+  maxWidth={'560px'}
   image={'/banner1.png'}
-  title={'IF Studio — créations & contenus digitaux'}
-  subtitle={'Contenus visuels et audio sur-mesure. Commandes privées. Discrétion garantie.'}
-  ctaText={'me contacter'}
-  ctaAction={() => navigate('/contact')}
+  title={"IF Studio — Création & contenus digitaux"}
+  subtitle={"Visuels, audio & produits digitaux. Sur-mesure, discret, paiement sécurisé."}
+  ctaText={"Voir l’offre"}
+  ctaAction={goToShop} // on laisse l’action par défaut pour l’instant
 />
 
 
-      {/* Message Container */}
-      <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
-        </p>
-      </div>
+      <p>
+  IF Studio conçoit des contenus <span className={styles.gold}>visuels & audio</span> adaptés à votre univers : photos, courtes vidéos, packs digitaux.
+</p>
+<p>
+  Processus <span className={styles.gold}>discret</span>, sélection des projets, acompte obligatoire, <span className={styles.gold}>paiement sécurisé</span>.
+</p>
+
 
       {/* 
 <Container size={'large'}>
@@ -66,21 +62,17 @@ const IndexPage = () => {
 </div>
 */}
 
-      {/* Highlight  */}
-      <div className={styles.highlightContainer}>
-        <Container size={'large'} fullMobile>
-          <Highlight
-            image={'/highlight.png'}
-            altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
-            miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
-            link={'/shop'}
-          />
-        </Container>
-      </div>
+     <Highlight
+  image={'/highlight.png'}
+  altImage={'Projet en vedette'}
+  miniImage={'/highlightmin.png'}
+  miniImageAlt={'aperçu'}
+  title={"Contenus digitaux sur-mesure"}
+  description={"Création clé-en-main : idées, tournage/prise de son, montage, export & livraison digitale. Parfait pour réseaux et usages privés."}
+  textLink={"Me contacter"}
+  link={'/shop'} // on garde /shop temporairement
+/>
+
 
       {/* Promotion */}
       {/*<div className={styles.promotionContainer}>
